@@ -4,7 +4,7 @@ WORKDIR /home/oracle
 
 USER oracle
 
-ADD wls.jar add-datasource.py create-demo-wls-domain.py ./
+ADD add-datasource.py create-demo-wls-domain.py ./
 
 ENV CONFIG_JVM_ARGS=-Djava.security.egd=file:/dev/./urandom
 
