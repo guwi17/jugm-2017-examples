@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker build -t guwi17/weblogic-demo .
+

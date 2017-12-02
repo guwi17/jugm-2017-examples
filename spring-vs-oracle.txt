@@ -1,0 +1,9 @@
+Was bieten JEE container?
+
+
+
+Oracle WebLogic Server
+
+Oracle WebLogic Server 12c R2 is the industry's best application server for building and deploying enterprise Java EE applications with support for new features for lowering cost of operations, improving performance, enhancing scalability and supporting the Oracle Applications portfolio. 
+
+

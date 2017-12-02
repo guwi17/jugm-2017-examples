@@ -1,0 +1,7 @@
+#!/bin/bash
+
+[[ -d tmp ]] && rm -rf tmp
+mkdir tmp
+unzip fmw_12.2.1.3.0_wls_Disk1_1of1.zip -d tmp
+docker build -t guwi17/weblogic-base .
+
