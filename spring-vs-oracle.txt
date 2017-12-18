@@ -6,4 +6,33 @@ Oracle WebLogic Server
 
 Oracle WebLogic Server 12c R2 is the industry's best application server for building and deploying enterprise Java EE applications with support for new features for lowering cost of operations, improving performance, enhancing scalability and supporting the Oracle Applications portfolio. 
 
+* Servlets
+
+* XA Transaktionen
+
+-> Atomikos
+
+* Cluster Synchronisation
+
+-> Zookeeper, shared database
+
+* Cluster Hashmap
+
+-> memcache, redis, shared database
+
+* best of both worlds?
+
+spring inside WLS
+
+-> class loading hell
+
+
+
+timing
+
+Spring+Jetty+Thymeleaf
+hello world summary =  25000 in 00:00:12 = 2010,3/s Avg:     1 Min:     0 Max:    71 Err:     0 (0,00%)
+
+WLS+Servlet+JSP
+hello world summary =  25000 in 00:00:09 = 2635,5/s Avg:     1 Min:     0 Max:   272 Err:     0 (0,00%)
 
