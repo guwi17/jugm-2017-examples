@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+(cd ../../apps/SpringBootEx1 && mvn clean install)
+
+cp $HOME/.m2/repository/com/tngtech/example/spring/SpringBootEx1/1.0-SNAPSHOT/SpringBootEx1-1.0-SNAPSHOT.jar .
+
+docker build -t guwi17/java-spring-boot1 .
+

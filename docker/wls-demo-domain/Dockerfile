@@ -10,7 +10,7 @@ ENV CONFIG_JVM_ARGS=-Djava.security.egd=file:/dev/./urandom
 
 RUN $MW_HOME/oracle_common/common/bin/wlst.sh create-demo-wls-domain.py
 
-# ADD postgresql-42.1.4.jar 
+ADD postgresql-42.1.4.jar domains/demo-wls/lib/
 
 EXPOSE 7001
 

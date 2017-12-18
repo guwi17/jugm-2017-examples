@@ -1,4 +1,8 @@
 #!/bin/bash
 
+# see https://jdbc.postgresql.org/download.html
+
+[[ -r postgresql-42.1.4.jar  ]] || wget 'https://jdbc.postgresql.org/download/postgresql-42.1.4.jar'
+
 docker build -t guwi17/weblogic-demo .
 

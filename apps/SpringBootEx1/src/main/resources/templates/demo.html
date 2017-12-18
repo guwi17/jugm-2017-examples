@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title th:text="${title}"></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<div class="page-content">
+		<p th:text="|Hello|">Hello.</p>
+		<p id="message" th:text="|${message}|">lorem ipsum</p>
+		<p style="font-size: 70%; padding-top: 20%"
+			th:text="|${componentVersion}|">1.2.3-template-SNAPSHOT</p>
+	</div>
+</body>
+</html>

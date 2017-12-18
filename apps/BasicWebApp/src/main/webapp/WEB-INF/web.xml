@@ -1,0 +1,26 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:web="http://www.oracle.com/webfolder/technetwork/jsc/xml/ns/javaee/web-app_3_1.xsd"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://www.oracle.com/webfolder/technetwork/jsc/xml/ns/javaee/web-app_3_1.xsd"
+	id="BasicWebApp" version="3.1" metadata-complete="true">
+
+	<display-name>${project.artifactId} ${project.version}</display-name>
+
+	<context-param>
+		<description>the Maven version</description>
+		<param-name>componentVersion</param-name>
+		<param-value>${project.version}</param-value>
+	</context-param>
+
+	<servlet>
+		<description>Demo Servlet</description>
+		<servlet-name>DemoServlet</servlet-name>
+		<servlet-class>de.guwi17.example.webapp.DemoServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DemoServlet</servlet-name>
+		<url-pattern>/demo</url-pattern>
+	</servlet-mapping>
+
+</web-app>
